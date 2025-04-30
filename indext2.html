@@ -103,18 +103,14 @@
     <div class="button" id="buttonContainer">
       <button><a href="./indext.html" style="text-decoration: none; color: inherit;">Click Here</a></button>
     </div>
-    <div class="flower" id="flower">🌸</div> <!-- Emoji bunga yang akan ditampilkan -->
-  </div>
+    <div class="flower" id="flower">🌸</div> 
 
   <script>
-    // Menunggu sampai animasi "Hi, I have a special gift for u" selesai
     setTimeout(function() {
       document.getElementById('buttonContainer').style.display = 'block';  // Menampilkan tombol
     }, 4000); // 4 detik setelah teks pertama selesai muncul
 
-    // Menambahkan event listener agar bisa di klik
     document.getElementById('buttonContainer').addEventListener('click', function() {
-      // Menampilkan bunga setelah tombol diklik
       document.getElementById('flower').style.display = 'block';
     });
   </script>
