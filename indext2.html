@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <title>Flower Animation</title>
+</head>
+<body>
+
+    <style>
+        body{
+
+    
+      margin: 0;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .glow-text {
+      color: #fff;
+      font-size: 2em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ffe7;
+      width: 0;
+      text-shadow:
+        0 0 5px #00ffe7,
+        0 0 10px #00ffe7,
+        0 0 20px #00ffe7;
+      animation:
+        typing 4s steps(30, end) forwards,
+        blink-caret 0.75s step-end infinite;
+
+
+    }
+
+    .byrepa-text {
+      color: #fff;
+      font-size: 1em; 
+      margin-top: 10px;
+      animation: glow 2s ease-in-out infinite alternate;
+      text-shadow:
+        0 0 3px #00ffe7,
+        0 0 7px #00ffe7,
+        0 0 15px #00ffe7;
+    }
+
+    .click-here {
+      display: none;
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #00ffe7;
+      text-shadow:
+        0 0 5px #00ffe7,
+        0 0 10px #00ffe7,
+        0 0 20px #00ffe7;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      50% { border-color: transparent }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow:
+          0 0 5px #00ffe7,
+          0 0 10px #00ffe7,
+          0 0 15px #00ffe7;
+      }
+      to {
+        text-shadow:
+          0 0 10px #00ffe7,
+          0 0 20px #00ffe7,
+          0 0 30px #00ffe7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div lass="container">
+    <div class="glow-text">Hi, I have special gift for u</div>
+    <div class="glow-text">(DariRepaa)</div>
+    <div class="button" id="buttonContainer">
+      <button><a href="./indext.html" style="text-decoration: none; color: inherit;">Click Here</a></button>
+    </div>
+    <div class="flower" id="flower">🌸</div> <!-- Emoji bunga yang akan ditampilkan -->
+  </div>
+
+  <script>
+    // Menunggu sampai animasi "Hi, I have a special gift for u" selesai
+    setTimeout(function() {
+      document.getElementById('buttonContainer').style.display = 'block';  // Menampilkan tombol
+    }, 4000); // 4 detik setelah teks pertama selesai muncul
+
+    // Menambahkan event listener agar bisa di klik
+    document.getElementById('buttonContainer').addEventListener('click', function() {
+      // Menampilkan bunga setelah tombol diklik
+      document.getElementById('flower').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
+  
+
+
+ 
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
